@@ -1,8 +1,8 @@
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libiconv_static", "libiconv_static\libiconv_static.vcproj", "{F9C13A95-C7EB-40F3-A599-3695C1E0CF38}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libiconv_static", "libiconv_static\libiconv_static.vcxproj", "{F9C13A95-C7EB-40F3-A599-3695C1E0CF38}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libiconv_dll", "libiconv_dll\libiconv_dll.vcproj", "{7EA4EC62-EA19-4ACC-86E2-0513E381292B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libiconv_dll", "libiconv_dll\libiconv_dll.vcxproj", "{7EA4EC62-EA19-4ACC-86E2-0513E381292B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
