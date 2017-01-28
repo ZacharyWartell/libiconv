@@ -101,7 +101,7 @@
       <OutputFile>Debug\libiconv_a_debug.lib</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>..\..\MSVC10\quasi_install.bat $(Platform) $(Configuration) $(TargetName) </Command>
+      <Command>..\quasi_install.bat $(Platform) $(Configuration) $(TargetName) </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -127,7 +127,7 @@
       <OutputFile>x64\Debug\libiconv_a_debug.lib</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>..\..\MSVC10\quasi_install.bat $(Platform) $(Configuration) $(TargetName) </Command>
+      <Command>..\quasi_install.bat $(Platform) $(Configuration) $(TargetName) </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -149,7 +149,7 @@
       <OutputFile>Release\libiconv_a.lib</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>..\..\MSVC10\quasi_install.bat $(Platform) $(Configuration) $(TargetName) </Command>
+      <Command>..\quasi_install.bat $(Platform) $(Configuration) $(TargetName) </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -174,7 +174,7 @@
       <OutputFile>x64\Release\libiconv_a.lib</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>..\..\MSVC10\quasi_install.bat $(Platform) $(Configuration) $(TargetName) </Command>
+      <Command>..\quasi_install.bat $(Platform) $(Configuration) $(TargetName) </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
