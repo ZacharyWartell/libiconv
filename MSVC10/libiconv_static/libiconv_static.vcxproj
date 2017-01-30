@@ -101,6 +101,9 @@
     <Lib>
       <OutputFile>Debug\libiconv_a_debug.lib</OutputFile>
     </Lib>
+    <PostBuildEvent>
+      <Command>..\quasi_install.bat $(Platform) $(Configuration) $(TargetName)</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <PreBuildEvent>
@@ -125,6 +128,9 @@
     <Lib>
       <OutputFile>x64\Debug\libiconv_a_debug.lib</OutputFile>
     </Lib>
+    <PostBuildEvent>
+      <Command>..\quasi_install.bat $(Platform) $(Configuration) $(TargetName) </Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <PreBuildEvent>
@@ -145,6 +151,9 @@
     <Lib>
       <OutputFile>Release\libiconv_a.lib</OutputFile>
     </Lib>
+    <PostBuildEvent>
+      <Command>..\quasi_install.bat $(Platform) $(Configuration) $(TargetName)</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <PreBuildEvent>
@@ -168,6 +177,9 @@
     <Lib>
       <OutputFile>x64\Release\libiconv_a.lib</OutputFile>
     </Lib>
+    <PostBuildEvent>
+      <Command>..\quasi_install.bat $(Platform) $(Configuration) $(TargetName)</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\source\lib\iconv.c">
