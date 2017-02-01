@@ -61,15 +61,30 @@ REM
 
 pushd "%INSTALL_LIB_DIR%"
 
-if EXIST iconv.lib del /q iconv.lib
-if EXIST iconv.pdb del /q iconv.pdb
+if %CONFIGURATION% == Debug (
+    set LIB_FILE=iconvd.lib
+    set PDB_FILE=iconvd.pdb
+    set DLL_FILE=iconvd.dll
+) else (
+    set LIB_FILE=iconv.lib
+    set PDB_FILE=iconv.pdb
+    set DLL_FILE=iconv.dll
+)
+if EXIST %LIB_FILE% del /q %LIB_FILE%
+if EXIST %PDB_FILE% del /q %PDB_FILE%
 
 if %TARGET_NAME% == libiconv_dll (
-	rename libiconv_dll.lib iconv.lib
-	rename libiconv_dll.pdb iconv.pdb
+    echo Script not programmed to handling install of .dll files yet!
+    echo    Did you mean to compile the static "libiconv_static" project instead?
+      
+    REM rename libiconv_dll.lib %LIB_FILE% 
+    REM rename libiconv_dll.pdb %PDB_FILE%
 ) else (
-	rename libiconv_a_debug.lib iconv.lib
-	REM rename libiconv_a_debug.pdb iconv.pdb
+    if %CONFIGURATION% == Debug (
+	rename libiconv_a_debug.lib %LIB_FILE% 
+    ) else (
+	rename libiconv_a.lib %LIB_FILE% 
+    )
 )
 
 popd
