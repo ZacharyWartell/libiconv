@@ -4,3 +4,6 @@
 *.sdf
 *.suo
 *.VC.db
+MSVC*/*/Debug/
+MSVC*/*/Release/
+MSVC*/*/x64/
