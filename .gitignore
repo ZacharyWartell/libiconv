@@ -10,4 +10,4 @@ MSVC*/Release/
 MSVC*/*/Debug/
 MSVC*/*/Release/
 MSVC*/*/x64/
-MSVC*/*.vcxproj.user
+MSVC*/**/*.vcxproj.user
