@@ -4,6 +4,7 @@
 *.sdf
 *.suo
 *.VC.db
+MSVC*/ipch/
 MSVC*/Debug/
 MSVC*/Release/
 MSVC*/*/Debug/
