@@ -16,7 +16,7 @@ echo Running "quasi_install.bat"
 REM cd
 REM exit
 
-set INSTALL_DIR=..\..\..\install\MSVS_2015\x64\
+set INSTALL_DIR=..\..\..\install\MSVS_2015\%PLATFORM%\
 set INSTALL_BIN_DIR=%INSTALL_DIR%bin
 set INSTALL_LIB_DIR=%INSTALL_DIR%lib
 set INSTALL_INC_DIR=%INSTALL_DIR%include
